@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,200;1,400;1,600;1,800&family=Oswald:wght@200;600&family=Roboto:ital,wght@0,300;0,500;1,400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+body {
+    background-color: #d5d5d5;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    height: 100%;
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topimage {
+    position: absolute;
+    height: 450px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.mobileimage {
+    height: 400px;
+}
+
+.form {
+    width: 100%;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.for-section {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 50px;
+    width: 75%;
+}
+
+.for-section h1 {
+    font-size: 25px;
+    margin: 25px;
+    text-transform: capitalize;
+    color: #355553;
+}
+
+input {
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 1px solid #a7a7a7;
+    margin-bottom: 10px;
+    width: 100%;
+    margin: 0 6px 10px 6px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background-color: #ff9100;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1d1d1d;
+    /* box-shadow: 0 0 20px 20px #1d1d1d inset; */
+}
+
+.btn-facebook {
+    background-color: #354c8d;
+}
+
+.btn-twitter {
+    background-color: #009fe9;
+}
+
+.btn-google {
+    background-color: #070707;
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        box-sizing: border-box;
+    }
+    .for-section {
+        padding: 20px 30px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .mobileimage {
+        /* height: 250px; */
+        display: none;
+    }
+    main {
+        grid-template-columns: 1fr;
+    }
+}
